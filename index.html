@@ -38,11 +38,14 @@
                         script.onload = function () {
                             console.log("onload");
 
+
+
                             if (typeof callback !== "undefined") {
                                 callback(self.responseObject);
                             }
 
                             script.onload = null;
+
                             document.body.removeChild(script);
                             script = null;
                         };
@@ -191,7 +194,7 @@
             description.innerHTML = data.weather[0].description;
             lastUpdate.innerHTML = "Ostatnia aktualizacja o " + momentWithCorrectUtcOffset(new Date(data.dt * 1000)).format(timeFormat);
 
-            date.innerHTML = momentWithCorrectUtcOffset(new Date()).format("LL, LT");
+            date.innerHTML = momentWithCorrectUtcOffset(new Date()).format("LL");
             
             var sunrise = momentWithCorrectUtcOffset(new Date(data.sys.sunrise * 1000));
             var sunset = momentWithCorrectUtcOffset(new Date(data.sys.sunset * 1000));
@@ -375,6 +378,8 @@
             console.log("load");
             moment.locale("sk");
 
+            setTimeout(fullscr, 5000)
+
             _apiParams = getApiParams();
             if (_apiParams === null) {
                 window.location = "config.html";
@@ -431,6 +436,20 @@
             rotate();
             setRem("resize");
         });
+
+        function fullscr() {
+            console.log("fullscreen");
+            var body = document.documentElement;
+            if (body.requestFullscreen) {
+            body.requestFullscreen();
+            } else if (body.webkitrequestFullscreen) {
+            body.webkitrequestFullscreen();
+            } else if (body.mozrequestFullscreen) {
+            body.mozrequestFullscreen();
+            } else if (body.msrequestFullscreen) {
+            body.msrequestFullscreen();
+            }
+        };
 
         // Simulating vh an vw with rem: http://stackoverflow.com/questions/13948713/is-there-any-cross-browser-javascript-for-making-vh-and-vw-units-work
         // But kindle 4 doesn't support rem (so all sizes are fixed fallback for kindle 4)
