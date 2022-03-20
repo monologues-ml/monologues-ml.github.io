@@ -192,7 +192,7 @@
             temp.innerHTML = Math.round(data.main.temp) + "<i class='wi wi-celsius' style='float:right;padding-top:0.35em;font-size: 0.4em'></i>";
             city.innerHTML = data.name;
             description.innerHTML = data.weather[0].description;
-            lastUpdate.innerHTML = "Zaktualizowano o " + momentWithCorrectUtcOffset(new Date(data.dt * 1000)).format(timeFormat);
+            lastUpdate.innerHTML = "Zmiana prognozy o " + momentWithCorrectUtcOffset(new Date(data.dt * 1000)).format(timeFormat) + "<br />Pobrano o " + momentWithCorrectUtcOffset(new Date()).format(timeFormat);
 
             date.innerHTML = momentWithCorrectUtcOffset(new Date()).format("LL");
             
