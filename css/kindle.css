@@ -187,11 +187,13 @@ html.night {
     font-size: 35rem;
 }
 .landscape #date {
+    bottom: 0.1em;
     font-size: 21.8px;
     font-size: 4.3rem;
 }
 
 .landscape #sun {
+    bottom: 0.1em;
     font-size: 21.8px;
     font-size: 4.3rem;
 }
