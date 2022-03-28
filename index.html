@@ -382,7 +382,7 @@
 
             const interval = setInterval(function() {
                 window.location.href = window.location.pathname + window.location.search + window.location.hash;
-            }, 600000);
+            }, 30 * 60 * 1000);
 
             _apiParams = getApiParams();
             if (_apiParams === null) {
