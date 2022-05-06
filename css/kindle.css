@@ -136,9 +136,9 @@ html.night {
 }
 
 .forecastIconWrapper {
-    font-size: 100px;
-    margin-top: 20px;
-    font-size: 10rem;
+    font-size: 40px;
+    margin-top: 10px;
+    /* font-size: 10rem; */
 }
 
 .colTemp {
