@@ -76,9 +76,10 @@ html.night {
 }
 
 #icon {
-    font-size: 250px;
-    font-size: 20rem;
-    line-height: 2em;
+    font-size: 150px;
+    /* font-size: 25rem; */
+    position: fixed;
+    top: 100px;
 }
 
 #iconWrapper {
@@ -185,7 +186,7 @@ html.night {
 }
 
 .landscape #icon {
-    font-size: 177.1px;
+    /* font-size: 177.1px; */
     font-size: 30rem;
 }
 .landscape #date {
@@ -201,7 +202,7 @@ html.night {
 }
 
 .landscape .forecastIconWrapper {
-    font-size: 71.9px;
+    /* font-size: 71.9px; */
     font-size: 10rem;
     line-height:0;
 }
