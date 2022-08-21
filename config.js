@@ -1,6 +1,6 @@
 //var api_locParams = "lat=54.347755&lon=18.562483";
 var api_locParams = "q=Gdańsk";
-var api_appId = "07e477836342adb97c1c70884fea36c3";
+var api_appId = "842023cf9a22159ce563490a7a2a3b38";
 var api_lang = "pl"
 var api_units = "metric"; 
 
